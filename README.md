@@ -24,25 +24,25 @@ Installing
     Clone the repository:
 
     bash
-    Copy
+   
     git clone https://github.com/yourusername/Crimson-Chat.git
 
     Navigate to the project directory:
 
     bash
-    Copy
+    
     cd Crimson-Chat
 
     Install the dependencies:
 
     bash
-    Copy
+    
     npm install
 
     Start the application:
 
     bash
-    Copy
+    
     npm start
 
 Usage
