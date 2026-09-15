@@ -16,16 +16,13 @@
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites
+### Commands
 
-- Node.js
-- npm
-- bash
-- cd Crimson-Chat
-- bash
-- npm install
-- bash
-- npm start
+    cd Crimson-Chat
+    
+    npm install
+    
+    npm start
 
 ### Installing
 
