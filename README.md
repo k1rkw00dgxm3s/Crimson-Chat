@@ -10,7 +10,7 @@
 
 ## Built With
 
-- [Zite!](https://zite.tech/) - The web framework used for building Crimson-Chat.
+- [Zite!](https://zite.com/) - The web framework used for building Crimson-Chat.
 
 ## Getting Started
 
@@ -20,6 +20,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 - Node.js
 - npm
+- bash
+- cd Crimson-Chat
+- bash
+- npm install
+- bash
+- npm start
 
 ### Installing
 
