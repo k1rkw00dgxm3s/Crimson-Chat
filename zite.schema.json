@@ -1,0 +1,248 @@
+{
+  "tables": [
+    {
+      "id": "tnZHnHiuTvE",
+      "sdkName": "channels",
+      "name": "Channels",
+      "primaryFieldId": "f9JSA2e4BSq",
+      "fields": [
+        {
+          "id": "f9JSA2e4BSq",
+          "sdkName": "name",
+          "definition": {
+            "name": "Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fsB627mCakR",
+          "sdkName": "type",
+          "definition": {
+            "name": "Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "mA7H",
+                  "label": "Public",
+                  "color": "green"
+                },
+                {
+                  "value": "qLA9",
+                  "label": "Private",
+                  "color": "purple"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fjnLVXTBxrU",
+          "sdkName": "icon",
+          "definition": {
+            "name": "Icon",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fbtFqNYsPG5",
+          "sdkName": "sortOrder",
+          "definition": {
+            "name": "Sort Order",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fvThZenHHFu",
+          "sdkName": "messages",
+          "definition": {
+            "name": "Messages",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tmcP1oxgFNN",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f2TJJHSk4Nb"
+            }
+          }
+        },
+        {
+          "id": "ffdPzvrue5H",
+          "sdkName": "readOnly",
+          "definition": {
+            "name": "Read Only",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "fcLCF8N3q4o",
+          "sdkName": "createdBy",
+          "definition": {
+            "name": "Created By",
+            "type": "user",
+            "template": {
+              "internalOnly": false,
+              "allowMultiple": false,
+              "deleteRowWhenUserDeleted": false
+            }
+          }
+        },
+        {
+          "id": "fdBrzRq7Mtb",
+          "sdkName": "dmParticipants",
+          "definition": {
+            "name": "Dm Participants",
+            "type": "single_line_text",
+            "template": {}
+          }
+        }
+      ]
+    },
+    {
+      "id": "tmcP1oxgFNN",
+      "sdkName": "messages",
+      "name": "Messages",
+      "primaryFieldId": "f7xU4iv3krY",
+      "fields": [
+        {
+          "id": "f7xU4iv3krY",
+          "sdkName": "content",
+          "definition": {
+            "name": "Content",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f2TJJHSk4Nb",
+          "sdkName": "channel",
+          "definition": {
+            "name": "Channel",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tnZHnHiuTvE",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fvThZenHHFu"
+            }
+          }
+        },
+        {
+          "id": "f8YyHCXa2iu",
+          "sdkName": "author",
+          "definition": {
+            "name": "Author",
+            "type": "user",
+            "template": {
+              "internalOnly": false,
+              "allowMultiple": false,
+              "deleteRowWhenUserDeleted": false
+            }
+          }
+        },
+        {
+          "id": "fo5yYu8hvxJ",
+          "sdkName": "replyToId",
+          "definition": {
+            "name": "Reply To Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fhXfw74anx4",
+          "sdkName": "replyPreview",
+          "definition": {
+            "name": "Reply Preview",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fnaaBpPyJNP",
+          "sdkName": "replyAuthorName",
+          "definition": {
+            "name": "Reply Author Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fdgua4VEse8",
+          "sdkName": "sentAt",
+          "definition": {
+            "name": "Sent At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fdMDG55T6tF",
+          "sdkName": "imageUrl",
+          "definition": {
+            "name": "Image Url",
+            "type": "url",
+            "template": {}
+          }
+        }
+      ]
+    },
+    {
+      "id": "tkoeLNXG2yN",
+      "sdkName": "typingIndicators",
+      "name": "Typing Indicators",
+      "primaryFieldId": "faxKqUNKkGV",
+      "fields": [
+        {
+          "id": "faxKqUNKkGV",
+          "sdkName": "channelId",
+          "definition": {
+            "name": "Channel Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fkszEQRPLoR",
+          "sdkName": "typer",
+          "definition": {
+            "name": "Typer",
+            "type": "user",
+            "template": {
+              "internalOnly": false,
+              "allowMultiple": false,
+              "deleteRowWhenUserDeleted": false
+            }
+          }
+        },
+        {
+          "id": "f1sLntukAjd",
+          "sdkName": "lastTypedAt",
+          "definition": {
+            "name": "Last Typed At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
