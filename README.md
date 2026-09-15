@@ -14,12 +14,8 @@ Built With
 Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-Prerequisites
 
-    Node.js
-    npm
-
-Installing
+Installing:
 
     Clone the repository:
 
@@ -27,19 +23,18 @@ Installing
    
     git clone https://github.com/yourusername/Crimson-Chat.git
 
-    Navigate to the project directory:
 
     bash
     
     cd Crimson-Chat
 
-    Install the dependencies:
+    
 
     bash
     
     npm install
 
-    Start the application:
+    
 
     bash
     
