@@ -21,7 +21,7 @@ Installing:
 
     bash
    
-    git clone https://github.com/yourusername/Crimson-Chat.git
+    git clone https://github.com/k1rkw00dgxm3s/Crimson-Chat.git
 
 
     bash
